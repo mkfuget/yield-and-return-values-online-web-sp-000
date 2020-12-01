@@ -4,6 +4,7 @@ def hello(array)
   i = 0
   out_array = []
   while i < array.length
+    binding.pry
     out_array.push(yield(array[i]))
     i += 1
   end
